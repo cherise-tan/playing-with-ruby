@@ -15,3 +15,4 @@ Make a small program that:
 ### Personal additions to the game  
 * Tell the user how many lives they have left
 * Specify text depending on how many lives are left (i.e. "two lives left" vs. "one life left")
+* Serialize number of turns so this can be changed easily

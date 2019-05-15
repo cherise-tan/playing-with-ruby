@@ -1,10 +1,11 @@
 # Generate a random number between 1-10
-# answer = rand(1..10)
-answer = 1
+answer = rand(1..10)
 
 # Initialises number of turns as zero
 turnCount = 0
 
+# Serialize number of turns so this can be changed easily
+totalTurns = 5
 
 loop do
   # Asks user to guess a number
@@ -23,10 +24,10 @@ loop do
     turnCount += 1
 
     # Calculate the number of turns left
-    turnsLeft = 3 - turnCount
+    turnsLeft = totalTurns - turnCount
 
     # Checks if the users has had 3 guesses
-    if turnCount == 3
+    if turnCount == totalTurns
       puts "You lost. Ruby's answer was #{answer}."
       break # Breaks the loop if the user has had three guesses
 
@@ -38,10 +39,8 @@ loop do
         text = "lives"
       end
 
+      # Tells the user to try again and how many lives they have left
       puts "Please try again! You have #{turnsLeft} #{text} left."
-
     end
-
-
   end
 end

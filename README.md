@@ -10,4 +10,7 @@ Make a small program that:
 * Tells the user if they guessed correctly
   * If not, lets them guess again
 * Only allows 3 guesses
-* If the user loses, tells them what the number was  
+* If the user loses, tells them what the number was
+
+### Personal additions to the game  
+* Tell the user how many lives they have left

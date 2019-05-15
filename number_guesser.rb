@@ -23,7 +23,7 @@ loop do
 
     # Checks if the users has had 3 guesses
     if turnCount == 3
-      puts "You lost"
+      puts "You lost. Ruby's answer was #{answer}."
       break # Breaks the loop if the user has had three guesses
     end
   end

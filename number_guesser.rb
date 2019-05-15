@@ -29,8 +29,16 @@ loop do
     if turnCount == 3
       puts "You lost. Ruby's answer was #{answer}."
       break # Breaks the loop if the user has had three guesses
+
     else
-      puts "Please try again! You have #{turnsLeft} lives left."
+      # Specify text depending on how many lives are left
+      if turnsLeft == 1
+        text = "life"
+      else
+        text = "lives"
+      end
+
+      puts "Please try again! You have #{turnsLeft} #{text} left."
 
     end
 
